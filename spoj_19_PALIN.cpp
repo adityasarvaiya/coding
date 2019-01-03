@@ -1,5 +1,5 @@
 //https://www.spoj.com/problems/PALIN/
-
+// wrong implementation
 #include <bits/stdc++.h>
 using namespace std;
 
