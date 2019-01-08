@@ -15,8 +15,6 @@ string strim(string st)
         }
     }
 
-
-
     return st.substr(0, i+1);
 }
 
