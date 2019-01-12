@@ -62,19 +62,21 @@ int main()
     cin >> n;
 
     while (n--) {
-        string st, s1, s2;
-        cin >> st;
+        string st, s1, s2, s3;
+        cin >> s3;
 
-        int len = st.length();
+        int len = s3.length();
 
         if (len == 1) {
-            if (st[0] < '9') {
-                cout << st[0]-'0'+1 << endl;
+            if (s3[0] < '9') {
+                cout << s3[0]-'0'+1 << endl;
             } else {
                 cout << 11 << endl;
             }
-        } else if (!all9(st)) {
+        } else if (!all9(s3)) {
 
+            st = increment(s3);
+            cout << "st : " << st << endl;
             int isOddLen, i,j,f=1;
             char midChar;
 
