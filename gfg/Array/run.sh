@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 2_Subarray_given_sum.cpp
+g++ 6_Minimum_Platforms.cpp
 
 if [ "$1" == "r" ]
 then 

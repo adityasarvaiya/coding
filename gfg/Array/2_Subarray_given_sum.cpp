@@ -1,5 +1,3 @@
-// 
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,6 +11,7 @@ int main() {
         sum = required sum from subarray
         start end = pointers to starting and ending of subarray
         */
+       
         int n,sum,start, end=0, curr_sum;
         cin >> n >> sum;
         int ar[n];

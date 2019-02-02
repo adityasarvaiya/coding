@@ -11,6 +11,8 @@
         "initializer_list": "cpp",
         "string_view": "cpp",
         "valarray": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp"
     }
 }
