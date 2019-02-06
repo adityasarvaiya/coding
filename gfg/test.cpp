@@ -3,9 +3,14 @@
 using namespace std;
 
 int main () {
-    vector <int> i = {2,3,4,5,6,7};
+    deque<int> i = {3,2,4,60,6,5};
+    deque <int> :: iterator it;
 
-    cout << i[2];
+    for (it = i.begin(); it!= i.end(); it++) {
+        cout << *it << endl;
+
+    }
+
 
     return 0;
 }

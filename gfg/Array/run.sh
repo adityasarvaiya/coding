@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 6_Minimum_Platforms.cpp
+g++ 14_Maximum_Tip_Calculator.cpp
 
 if [ "$1" == "r" ]
 then 

@@ -13,6 +13,10 @@
         "valarray": "cpp",
         "ostream": "cpp",
         "bitset": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "optional": "cpp",
+        "system_error": "cpp",
+        "thread": "cpp",
+        "typeindex": "cpp"
     }
 }

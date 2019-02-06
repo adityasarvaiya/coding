@@ -1,3 +1,6 @@
+//https://practice.geeksforgeeks.org/problems/equilibrium-point/0 <br>
+//https://www.geeksforgeeks.org/equilibrium-index-of-an-array/
+
 #include <bits/stdc++.h>
 using namespace std;
 
