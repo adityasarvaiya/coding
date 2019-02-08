@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 14_Maximum_Tip_Calculator.cpp
+g++ 4_missing_num_in_array.cpp
 
 if [ "$1" == "r" ]
 then 
