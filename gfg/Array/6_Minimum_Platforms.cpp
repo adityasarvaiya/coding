@@ -13,7 +13,7 @@ int Find_Min_Safe_Platforms(int len, int c[][2])
     for (int j=0; j < len; ++j) {
         if (c[j][0] == c[j][1]) {
             all.push_back(make_pair(c[j][0], 1));
-            all.push_back(make_pair(c[j][1], -1));
+            all.push_back(make_pair((c[j][1])+1, -1));
         } else {
             all.push_back(make_pair(c[j][0], 1));
             all.push_back(make_pair(c[j][1], -1));

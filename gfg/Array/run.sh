@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 4_missing_num_in_array.cpp
+g++ 7_Maximum_index.cpp
 
 if [ "$1" == "r" ]
 then 
