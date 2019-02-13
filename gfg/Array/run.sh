@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 23_Find_all_pairs_with_a_given_sum.cpp
+g++ 25_Element_left_smaller_right_greater.cpp
 
 if [ "$1" == "r" ]
 then 
