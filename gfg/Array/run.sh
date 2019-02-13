@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 25_Element_left_smaller_right_greater.cpp
+g++ 29_Inversion_of_array.cpp
 
 if [ "$1" == "r" ]
 then 
