@@ -1,5 +1,5 @@
 // https://practice.geeksforgeeks.org/problems/equal-to-product/0
-// unsubmitted
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,12 +16,17 @@ int find_ans(vector<unsigned long long> &nums, unsigned long long x)
             }
         } else if (x % (*it) == 0) {
             other = x/(*it);
-            if (hash.find(other) != hash.end() && (*it) != other) {
+            if (hash.find(other) != hash.end()) {
                 // cout << *it << " " << x/(*it) << endl;
-                return 1;
+                return 1;  
             }
         }
-        hash[*it] = 1;
+        
+        if (hash.find(*it) != hash.end()) {
+            hash[*it] += 1;
+        } else {
+            hash[*it] = 1;
+        }
     }
 
     return 0;

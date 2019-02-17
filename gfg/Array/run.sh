@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 29_Inversion_of_array.cpp
+g++ 10_Pythagorean_Triplet.cpp
 
 if [ "$1" == "r" ]
 then 
