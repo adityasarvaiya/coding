@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 10_Pythagorean_Triplet.cpp
+g++ Find_duplicates.cpp
 
 if [ "$1" == "r" ]
 then 
