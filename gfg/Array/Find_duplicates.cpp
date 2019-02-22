@@ -1,3 +1,6 @@
+// https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
+// not submmited
+
 #include <bits/stdc++.h>
 using namespace std;
 void printDuplicates(int a[], int n);
