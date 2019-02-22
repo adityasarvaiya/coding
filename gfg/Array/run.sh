@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ 10_Pythagorean_Triplet.cpp
+g++ 50_Three_Great_Candidates.cpp
 
 if [ "$1" == "r" ]
 then 
