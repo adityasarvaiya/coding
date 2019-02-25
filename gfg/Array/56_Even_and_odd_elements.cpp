@@ -1,29 +1,32 @@
+// https://practice.geeksforgeeks.org/problems/even-and-odd-elements-at-even-and-odd-positions/0
+
 #include <bits/stdc++.h>
 using namespace std;
 
 void find_sorted(int a[], int n) 
 {
-    int i=0,j=1;
+    int i=0,j=0,start, end, iter, temp;
 
     while (true) {
-        while (a[i]%2 == 0 && i < n) {
-            i += 2;
+        while (a[i]%2 != 0 && i < n) {
+            i += 1;
         }
 
-        while (a[j]%2 == 1 && j < n) {
-            j += 2;
+        while (a[j]%2 != 1 && j < n) {
+            j += 1;
         }
 
-        if (i < n && j < n) {
-            swap(a[i], a[j]);
+        if (i < n) {
+            cout << a[i] << " ";
+        } if (j < n) {
+            cout << a[j] << " ";
         } else {
             break;
         }
-    }
 
-    for (i = 0; i < n; ++i) {
-        cout << a[i] << " ";
-    } 
+        i++;
+        j++;
+    }
 
     cout << endl;
 
