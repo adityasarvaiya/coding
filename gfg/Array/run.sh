@@ -1,7 +1,7 @@
 #!/bin/bash
 
-c++ 57_Type_of_array.cpp
+c++ 66_Flip_Bits.cpp
 
-if [ $1 = 'r' ]; then
+if [ "$1" == "r" ]; then
     ./a.out < t.in 
 fi

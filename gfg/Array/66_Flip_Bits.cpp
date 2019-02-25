@@ -50,7 +50,7 @@ int main () {
             cin >> a[i];
         }
 
-        cout << find_max_1(a,n) << endl;
+        cout << find_max_1(a,n) << endl << endl;
     }
     return 0;
 }
