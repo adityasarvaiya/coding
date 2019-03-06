@@ -1,35 +1,41 @@
 // Flip Bits
 // https://practice.geeksforgeeks.org/problems/flip-bits/0
+// unsubmitted
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int find_max_1(int a[], int n)
 {
-    int start=-1, end=-1, i, zeros;
+    int start=-1, end=-1, i;
 
     for (i = 0; i < n; ++i) {
-        if (a[i] == 0) {
-            ++zeros;
+        if (a[i] == 1) {
+            a[i] = 1;
         } else {
-            --zeros;
+            a[i] = -1;
+        } 
+    }
+
+    int gmax=INT_MIN, currmax=0, zeros=0;
+
+    for (i = 0; i < n; ++i) {
+        currmax += a[i];
+
+        if (currmax < 0) {
+            currmax = 0;
         }
 
-        if (zeros < 0) {
-            zeros = 0;
-            end = -1;
-            start = -1;
-        } else {
-            if (start == -1) {
-                start = i;
-                end = i;
-            } else {
-                end = i;
-            }
+        if (a[i] == 1) {
+            zeros++;
+        }
+
+        if (currmax > gmax) {
+            gmax = currmax;
         }
     }
 
-    cout << end - start + 1 << endl;
+    cout << zeros << endl;
 
     return 0;
 }
