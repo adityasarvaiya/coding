@@ -3,14 +3,9 @@
 using namespace std;
 
 int main () {
-    deque<int> i = {3,2,4,60,6,5};
-    deque <int> :: iterator it;
-
-    for (it = i.begin(); it!= i.end(); it++) {
-        cout << *it << endl;
-
+    cout << "hello" << endl;
+    if ('a'^'a') {
+        cout << "1" << endl;
     }
-
-
     return 0;
 }
