@@ -1,57 +1,36 @@
-// https://practice.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x/0
+// https://practice.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x/0 
 
 #include <bits/stdc++.h>
 using namespace std;
 
-vector <pair<int, int>> find_pairs(vector<int> a, vector<int> b, int X) 
+void find_pairs(vector<int> a, vector<int> b, int X) 
 {   
-    // cout << "1" << endl;
+    int a_size = a.size(), b_size = b.size(),i,f=0;
+    unordered_map <int,int> hash;
 
-    double MAX_LEN = pow(10,6);
-    int i,diff;
-    int asize = a.size();
-    int bsize = b.size();
-    int hash_neg[int(MAX_LEN)];
-    int hash_pos[int(MAX_LEN)];
-    // cout << "5" << endl;
-
-    vector <pair<int, int>> out;
-
-    // cout << "2" << endl;
-    for (i = 0; i <= MAX_LEN; i++) {
-        hash_neg[i] = 0;
-        hash_pos[i] = 0;
+    for (i = 0; i < b_size; ++i) {
+        hash[b[i]] = b[i];
     }
 
-    for (i = 0; i < bsize; i++) {
-        if (b[i] < 0) {
-            hash_neg[(-1)*b[i]] = 1;
-        } else {
-            hash_pos[b[i]] = 1;
-        }
-    }
+    sort(a.begin(), a.end());
 
-    // cout << "3" << endl;
-
-
-    // for (i = 0; i < asize; i++) {
-        diff = X - a[i];
-        if (diff >= 0) {
-            if (hash_pos[diff] == 1) {
-                out.push_back(make_pair(a[i], diff));
-            // } 
-        } else {
-            if (hash_neg[(-1)*diff] == 1) {
-                out.push_back(make_pair(a[i], diff));
+    for (i = 0; i < a_size; ++i) {
+        if (hash.find(X-a[i]) != hash.end()) {
+            if (f == 0) {
+                cout << a[i] << " " << hash[X-a[i]];
+                f=1;
+            } else {
+                cout << ", " << a[i] << " " << hash[X-a[i]];
             }
         }
-
     }
 
-    // cout << "4" << endl;
+    if (f==0) {
+        cout << -1;
+    }
+    cout << endl;
 
-
-    return out;
+    return;
 }
 
 int main() 
@@ -77,24 +56,7 @@ int main()
             b.push_back(curr);
         }
 
-        vector<pair<int, int>> out = find_pairs(a,b,X);
-        sort(out.begin(), out.end());
-        vector<pair<int, int>> :: iterator it;
-
-        if (out.size() == 0) {
-            cout << -1 << endl;
-        } else {
-            for (it = out.begin(); it != out.end(); it++) {
-                if (it == out.begin()) {
-                    cout << (*it).first << " " << (*it).second;
-                } else {
-                    cout << ", " << (*it).first << " " << (*it).second;
-                }
-            }
-
-            cout << endl;
-        }
-
+        find_pairs(a,b,X);
     }
 
     return 0;

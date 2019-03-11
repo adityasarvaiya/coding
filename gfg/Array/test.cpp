@@ -3,7 +3,7 @@
 using namespace std;
 
 int main () {
-    cout << ('a'^'b' ^'a') << endl;
+    cout << isalnum(' ') << endl;
 
     return 0;
 }

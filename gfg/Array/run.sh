@@ -1,6 +1,6 @@
 #!/bin/bash
 
-c++ 74_Row_with_max_1.cpp
+c++ 21_Rotation.cpp
 
 if [ "$1" == "r" ]; then
     ./a.out < t.in 
