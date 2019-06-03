@@ -3,9 +3,13 @@
 using namespace std;
 
 int main () {
-    cout << "hello" << endl;
-    if ('a'^'a') {
-        cout << "1" << endl;
-    }
+    string s = "  Aditya k Sarvaiya ";
+
+    cout << s << endl;
+
+    replace(s.begin(), s.end(), ' ', '+');
+
+    cout << s << endl;
+
     return 0;
 }
