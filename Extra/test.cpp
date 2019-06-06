@@ -1,18 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main() 
-{ 
+int main () {
+    string s = "  Aditya k Sarvaiya ";
 
-	int x = 112234;
-	int y = 4566;
-	string s = to_string(x);
-	string s1 = to_string(y);
+    cout << s << endl;
 
-	s.append(s1);
+    replace(s.begin(), s.end(), ' ', '+');
 
-	cout << s;
-    
-	return 0; 
+    cout << s << endl;
+
+    return 0;
 }

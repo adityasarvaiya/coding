@@ -1,6 +1,6 @@
 #!/bin/bash
 
-c++ 6_Largest_number_possible.cpp
+c++ 7_Minimise_height.cpp
 
 if [ "$1" == "r" ]; then
     ./a.out < t.in 
