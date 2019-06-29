@@ -1,6 +1,6 @@
 #!/bin/bash
 
-c++ 12_geek_collect_ball.cpp
+c++ 1_min_operation.cpp
 
 if [ "$1" == "r" ]; then
     ./a.out < t.in 
