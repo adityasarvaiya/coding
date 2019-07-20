@@ -1,6 +1,7 @@
 // https://www.codechef.com/submit/ASTRING
 // https://www.codechef.com/problems/ASTRING
 // https://discuss.codechef.com/t/astring-editorial/12597
+// https://s3.amazonaws.com/codechef_shared/download/Solutions/LTIME36/Tester/ASTRING_subtask3.cpp
 
 #include <bits/stdc++.h>
 using namespace std;
