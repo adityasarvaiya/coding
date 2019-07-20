@@ -33,11 +33,11 @@ int main()
     while (t--) {
         cin >> n;
         int i, curr;
-        vector <pair<int, int>> in;
+        vector <pair<int, int>> in (n);
 
         for (i = 0; i < n; i++) {
             cin >> curr;
-            in.push_back(make_pair(curr, i));
+            in[i] = make_pair(curr, i);
         }
 
         int out = find_inversions(in);

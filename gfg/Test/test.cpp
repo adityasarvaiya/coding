@@ -1,88 +1,55 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
-int util(int **a, int n, int m) {
+
+vector<string> subdomainVisits(vector<string>& A) {
+    unordered_map <string, int> h;
+    int l = A.size(), vis;
     
-    int ones = 0, ans = 0;
-
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < m; ++j) {
-            // cout << a[i][j] << " ";
-            if (a[i][j] == 1) {
-                ones++;
-            }
+    for (int i = 0; i < l; ++i) {
+        vector <string> B;
+        sscanf(A[i].c_str(), "%d", &vis);
+        
+        char *in;
+        strcpy(in, A[i].c_str());
+        char *toks = strtok(in, " ");
+        toks = strtok(NULL, " ");
+        
+        char *domains = strtok(toks, ".");
+        
+        while (domains != NULL) {
+            B.push_back(string(domains));
+            domains = strtok(NULL, ".");
         }
-
-        // cout << endl;
+        
+        cout << "DObn" << endl;
+        
+        // for (int j = 0; j < B.size(); ++j) {
+        //     string s = B[j];
+        //     for (int k = j+1; k < B.size(); ++k) {
+        //         s = s + "." + B[k];
+        //     }
+        
+        //     if (h.find(s) == h.end()) {
+        //         h[s] = vis;
+        //     } else {
+        //         h[s] += vis;
+        //     }
+        // }
     }
-
-    while (ones > 0) {
-        int curr = ones;
-        typedef pair<int, int> pairs; 
-        set<pairs> h;
-        // unordered_set <pair<int, int>> h;
-
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                if (a[i][j] == 2 && h.find({i,j}) == h.end()) {
-                    if (i-1 >= 0 && a[i-1][j] == 1) {
-                        a[i-1][j] = 2;
-                        ones--;
-                        h.insert({i-1,j});
-                    }
-
-                    if (i+1 < n && a[i+1][j] == 1) {
-                        a[i+1][j] = 2;
-                        ones--;
-                        h.insert({i+1,j});
-                    }
-
-                    if (j-1 >= 0 && a[i][j-1] == 1) {
-                        a[i][j-1] = 2;
-                        ones--;
-                        h.insert({i,j-1});
-                    }
-
-                    if (j+1 < m && a[i][j+1] == 1) {
-                        a[i][j+1] = 2;
-                        ones--;
-                        h.insert({i,j+1});
-                    }
-                }
-            }
-        }
-
-        if (ones == curr) {return -1;}
-        ans++;
-    }
-
+    
+    vector <string> ans;
+    
+    // for(auto x : h) {
+    //     ans.push_back(to_string(x.second) + " " + x.first);
+    // }
+    
     return ans;
 }
 
-int main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-     
-    int t,n,m; 
-    cin >> t;
-     
-    while (t--) {
-        cin >> n >> m;
-
-        int **a = new int *[n];
-        for (int i = 0; i < n; ++i) {
-            a[i] = new int [m];
-        }
-
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                cin >> a[i][j];
-            }
-        }
-        
-        cout << util(a,n,m) << endl;
-    }
-     
-    return 0;
-}
+int main() 
+{ 
+    vector <string> s;
+    s.push_back("9001 discuss.leetcode.com");
+	subdomainVisits(s);
+	return 0; 
+} 

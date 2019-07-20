@@ -32,18 +32,20 @@ int max_sum(int A[],int N)
 
     for (i = 0; i < N; ++i) {
         tot_sum += A[i];
-    }
-    
-    for (i = 0; i < N; ++i) {
         curr += A[i] * i;
     }
     
     max_product = curr;
     
-    for (i = 1; i < N; ++i) {
-        curr = curr - (tot_sum - A[i-1]) + A[i-1]*(N-1);
+    for (i = N-1; i >= 0; --i) {
+        curr = curr + tot_sum - A[i] * N;
         max_product = max(max_product, curr);
     }
+    
+    // for (i = 1; i < N; ++i) {
+    //     curr = curr - (tot_sum - A[i-1]) + A[i-1]*(N-1);
+    //     max_product = max(max_product, curr);
+    // }
     
 
     return max_product;

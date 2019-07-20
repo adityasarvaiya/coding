@@ -55,7 +55,7 @@ void check_validity(char *a)
         return;
     }
     
-    if (won(a, 'O') && ex == 5) {
+    if (won(a, 'O') && ex != zero) {
         cout << "Invalid" << endl;
         return;
     }

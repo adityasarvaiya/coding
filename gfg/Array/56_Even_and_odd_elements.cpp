@@ -5,7 +5,7 @@ using namespace std;
 
 void find_sorted(int a[], int n) 
 {
-    int i=0,j=0,start, end, iter, temp;
+    int i=0,j=0;
 
     while (true) {
         while (a[i]%2 != 0 && i < n) {
