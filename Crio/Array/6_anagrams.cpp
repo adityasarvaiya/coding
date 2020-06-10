@@ -1,14 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> findAnagrams(string s, string p) {
-    vector<int> ans;
+unordered_map <char, int> buildHashOfPattern(string p) {
     unordered_map <char, int> hash;
-    int match = 0;
-
-    if (s.size() == 0 || p.size() > s.size()) {
-        return ans;
-    }
 
     for (int i = 0; i < p.size(); ++i) {
         if (hash.find(p[i]) == hash.end()) {
@@ -16,7 +10,20 @@ vector<int> findAnagrams(string s, string p) {
         } else {
             hash[p[i]] += 1;
         }
-    }   
+    }
+
+    return hash;
+}
+
+vector<int> findAnagrams(string s, string p) {
+    vector<int> ans;
+    int match = 0;
+
+    if (s.size() == 0 || p.size() > s.size()) {
+        return ans;
+    }
+
+    unordered_map <char, int> hash = buildHashOfPattern(p);
 
     for (int i = 0; i < s.size(); ++i) {
         if (hash.find(s[i]) != hash.end()) {

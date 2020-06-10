@@ -2,21 +2,33 @@
 using namespace std;
 
 int totalFruit(vector<int>& tree) {
-    unordered_map<int,int> m;
-    int n=tree.size();
-    int l=0,r=0,ma=0,ct=0;
-    while(r<n){
-        if(m[tree[r]]==0) ct++;
-        m[tree[r]]++;
-        r++;
-        while(l<r && ct>2){
-            m[tree[l]]--;
-            if(m[tree[l]]==0) ct--;
-            l++;
-        }
-        ma=max(ma,r-l);
-    }
-    return ma;
+	unordered_map <int, int> hash;
+	int start = 0, end, ans = 0;
+
+	for (int i = 0; i < tree.size(); ++i) {
+		end = i;
+
+		if (hash.find(tree[i]) == hash.end()) {
+			hash[tree[i]] = 1;
+		} else {
+			hash[tree[i]] += 1;
+		}
+
+		
+		while (hash.size() > 2) {
+			hash[tree[start]] -= 1;
+			
+			if (hash[tree[start]] == 0) {
+				hash.erase(tree[start]);
+			}
+
+			start++;
+		}
+
+		ans = max(ans, end-start+1);
+	}
+
+	return ans;
 }
 
 int main()
