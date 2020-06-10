@@ -1,7 +1,7 @@
 #!/bin/bash
 
-c++ test.cpp
+c++ T4.cpp
 
 if [ "$1" == "r" ]; then
-    ./a.out < t.in 
+    ./a.out < in1.txt > f31.txt
 fi

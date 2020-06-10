@@ -1,25 +1,50 @@
 #include <bits/stdc++.h>
 using namespace std;
  
+void f(vector <int> arr) { 
+  stack < int > s; 
+  
+  int n = arr.size();
+  s.push(arr[0]); 
+  
+  for (int i = 1; i < n; i++) { 
+  
+    if (s.empty()) { 
+      s.push(arr[i]); 
+      continue; 
+    } 
+  
+    while (s.empty() == false && s.top() < arr[i]) 
+    {          
+        // cout << s.top() << " --> " << arr[i] << endl; 
+        cout << arr[i] << " "; 
+        s.pop(); 
+    } 
+  
+    s.push(arr[i]); 
+  } 
+  
+  while (!s.empty()) { 
+    // cout << s.top() << " --> " << -1 << endl; 
+    cout << -1 << " "; 
+    s.pop(); 
+  } 
+
+  cout << endl;
+} 
+
+
 int main()
 {
-    vector <vector <int>> A;
-    int n = 3, m = 2;
+    int n;
+    cin >> n;
+
+    vector <int> A(n);
 
     for (int i = 0; i < n; ++i) {
-        vector <int> B(m);
-        for (int j = 0; j < m; ++j) {
-            cin >> B[j];
-        }
-        A.push_back(B);
-    }
-
-    for (int k = 0; k < n; ++k) {
-        for (int l = 0; l < m; ++l) {
-            cout << A[k][l] << " ";
-        }
-        cout << endl;
+        cin >> A[i];
     }
     
+    f(A);
     return 0;
 }
