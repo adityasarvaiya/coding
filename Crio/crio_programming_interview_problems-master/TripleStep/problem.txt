@@ -1,0 +1,19 @@
+Problem Description
+     A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time.Can you write a program to count how many possible ways the child can run up the stairs.
+Input format:
+N - number of steps
+Output format
+number of different ways to claim mod 1000000007
+Sample Input
+3
+
+
+Sample Output
+4
+Explanation
+   1. can reach up in 3 step jump
+   2. 2 step jump and then 1 step jump
+   3. 1 step jump and 2 step jump
+   4. 1 step jump, 1 step jump and 1 step jump
+Constraints
+1 <= N <= 100000

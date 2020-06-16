@@ -1,0 +1,56 @@
+You are given a network cities. Major cities will have police stations. Jurisdiction of some cities comes under the nearest city having possible station available. 
+First line will be N number of cities and B Bridges connecting the cities. Each bridge represents the distance of 1 between the connecting cities.So your task is to report the minimum distance between the city and it's jurisdiction city.
+
+Input Format:
+First line will contain the N number of cities and B bridges between them.
+Next line onwards two space seperated integers will be given.
+Then a single integer will be given denoting S number of source City where are police station.
+Next line will contain S distinct intgers representing the cities. 
+
+Output Format:
+For ith line you need to print the minimum distance of ith city from it's jurisdiction city.
+
+NOTE:
+The Cities are represented as 1-based indexing.
+
+Constraints:
+1<=N<=100000
+1<=E<=100000
+1<=S<=100000
+
+=========
+Example 1
+=========
+Input:
+3 2
+1 2
+2 3
+1
+2
+
+Output: 
+1
+0
+1
+
+Explanation: 
+Second city is having their own police station so their distance is 0. Other cities will have distance 1 as they are directly connected with city 2. 
+
+=========
+Example 2
+=========
+Input:
+4 5
+1 2
+2 3
+3 4
+4 2
+1 3
+2
+1 4
+
+Output:
+0
+1
+1
+0

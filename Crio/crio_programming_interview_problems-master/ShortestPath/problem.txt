@@ -1,0 +1,38 @@
+Given a connected unweighted graph, a source and a destination, we need to find shortest path from source to destination in the graph in most optimal way.
+
+Input:
+In first line you are given the number of nodes in the graph n and the number of edges m respectively.
+Next m lines contain two integers(graph nodes) denoting a edge between first and second integer.
+Next line will have two integers first denoting the source and the second denoting the destination.
+
+Output:
+You have to print the most optimal path from source to destination.
+
+Constraints:
+1 <= n <= 50000
+1 <= m <= min(n*(n-1)/2,100000)
+1 <= source ,destination <= n
+
+Example:
+========
+
+Input:
+
+8 10
+1 2
+1 4
+2 3 
+4 5 
+4 8 
+5 6 
+5 7 
+5 8 
+6 7
+7 8
+1 8
+
+Output:
+
+1
+4
+8

@@ -1,0 +1,45 @@
+Write a program that outputs the string representation of numbers from 1 to N.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+Input Format -
+First line contains an integer representing the value of N.
+
+Constraints-
+
+1 <= N <= 100000
+
+
+Output Format -
+Print N lines where each line is a string which is either Fizz or Buzz or FizzBuzz or an integer.
+
+=========
+Example 1
+=========
+Input -
+15
+
+
+Output -
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+
+
+Explanation-
+For n = 1 , 1 is printed.
+For n = 3 , Fizz is printed.
+For n = 5 , Buzz is printed.
+For n = 15 , FizzBuzz is printed.

@@ -1,0 +1,37 @@
+Given a string, we want to cut it into pieces such that each piece is a palindrome. Write a function to return the minimum number of cuts needed.
+
+Input Format:
+First line will contain a string S consisting of all lowercase alphabets.
+
+Output Format:
+First line will contain minimum number of cuts needed.
+
+Constraints:
+1<=len(S)<=2000
+
+=========
+Example 1
+=========
+Input:
+8
+aabbaacd
+
+Output: 
+2
+
+Explanation:
+We need to make two cuts at minimum aabbaa|c|d.
+
+
+=========
+Example 2
+=========
+Input:
+4
+abcd
+
+Output:
+3
+
+Explanation: 
+Each character will belong to each cut. So we need to make 3 cuts between each characters a|b|c|d.

@@ -1,0 +1,46 @@
+You are given a list of words present in a book. Your younger brother is really curious to know the K most frequent words present inside the book.
+Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first.
+
+Input:
+The first line contains N, N is the number of input strings. The second line contains N space seperated input strings. The third line contains the value of K.
+
+Output:
+Print the K most frequent words present inside the book, each in a new line. If two words have the same frequency, then the word with the lower alphabetical order comes first.
+
+Constraints:
+1 <= N <= 1000
+1 <= Length(S) <= 100000
+'a' <= S[i] <= 'z'
+1 <= K <= Number of Unique elements
+
+==========
+Example 1
+==========
+
+Input:
+1 
+bus 
+1
+
+Output:
+bus
+
+Explanation:
+In the given input, the frequency of bus is 1 and it is the 1st most frequent word.
+ 
+==========
+Example 2
+==========
+
+Input:
+3 
+car bus car 
+2
+
+Output:
+car
+bus
+
+Explanation:
+In the given input, the frequency of car is 2, frequency of bus is 1. 
+ 

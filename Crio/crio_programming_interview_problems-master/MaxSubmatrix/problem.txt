@@ -1,0 +1,35 @@
+Given an NxN matrix of positive and negative integers, find the non-empty submatrix with the largest possible sum.
+
+Constraint:
+0<= n,m <=400
+-100000<= M[i][j] <= 100000 
+
+Input Format:
+
+First-line will contain two space separated integers n and m denoting the number of rows and the number of columns respectively.
+Next, n lines will contain m space separated integers.
+
+Output Format:
+
+Output a single integer denoting the sum of submatrix with the largest possible sum.
+
+=========
+Example 1
+=========
+Input:
+
+4 5
+1 2 -1 -4 -20
+-8 -3 4 2 1 
+3 8 10 1 3
+-4 -1 1 7 -6 
+
+Output:
+
+29
+
+Explanation:
+
+From (2,2) top-left to (4,4) bottom-right.
+
+

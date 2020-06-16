@@ -1,0 +1,23 @@
+Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents), and pennies (1 cent), calculate the number of ways of representing n cents.
+
+Constraints :
+1<=n<=1000000
+
+Input Format :
+First and only line will contain a number n representing n cents.
+
+Output Format:
+Only line showing the total no. of ways modulo 1e9+7.
+
+=========
+Example 1
+=========
+
+Input:
+5
+
+Output:
+2
+
+Explanation:
+You can take either 5 pennies = 1+1+1+1+1 = 5 or take a nickel = 5.

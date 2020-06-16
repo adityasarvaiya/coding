@@ -1,0 +1,29 @@
+There are n cities connected by m flights. Each flight starts from city u and arrives at v with a price w.
+
+Now given all the cities and flights, together with starting city src and the destination dst, your task is to find the cheapest price from src to dst with up to k stops. If there is no such route, output -1.
+
+INPUT
+First line will contain two numbers N and M denoting number of nodes and number of flights respectively.
+Next M lines contain three number U, V, W denoting source of flight, destination of flight, and price of flight respectively.
+Next line contains three numbers S, D, K denoting source of journey,final destination and number of stops allowed respectively
+
+OUTPUT
+Single line containing one number denoting the cheapest price from source to destination with upto K stops.
+
+CONSTRAINTS
+1<=N<=100 
+0<=M<=N*(N+1)/2
+1<=U,V<=N
+1<=W<=10000
+1<=S,D<=N
+0<=K<=N-1
+
+SAMPLE INPUT 
+3 3
+1 2 100
+2 3 100
+1 3 500
+1 3 1
+
+SAMPLE OUPUT
+200

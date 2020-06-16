@@ -1,0 +1,48 @@
+There is an unweighted tree which consists of N nodes. You need to find the largest distance between two nodes in a tree. Distance between two nodes will be number of edges on a path between the nodes.The path will be unique as it is a tree.
+
+Input Format:
+First line contains T number of test cases.
+For each test case first line will be number of nodes N and number of edges E.
+Next line will contains each node value.
+Next E lines will contains two space seperated integers U & V node which have an edge between them.
+
+Output Format:
+For each test case print the answer in a new line.
+
+Constraints:
+1<=T<=500
+1<=N<=100000
+
+=========
+Example 1
+=========
+Input:
+1
+4 3
+1 2 3 4
+1 2
+1 3
+4 1
+
+
+Output: 
+2
+
+Explanation: 
+The longest distance will be between node 2 & 3. There are other possible combinations as well. But the maximum distance will be 2.
+
+=========
+Example 2
+=========
+Input:
+1
+2 1
+1 2
+1 2
+
+Output:
+1
+
+
+Explanation: 
+There is only one path which is 1->2. So the longest distance is 1.

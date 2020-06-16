@@ -1,0 +1,28 @@
+Given an undirected graph, you have to find the number of connected components.
+
+Input Format :
+First line contains 2 integers N, E - number of nodes and edges respectively.
+Next E lines contain 2 space separated integers u and v - the nodes which have an edge between them.
+
+Output Format :
+Print the number of connected components.
+
+Constraints :
+N <= 100000
+E <= 100000
+
+=========
+Example 1
+=========
+Input :
+
+5 3
+1 2
+3 4
+4 5
+
+Output :
+2
+
+Explanation :
+There are 2 components in this graph {1,2} and {3,4,5}.

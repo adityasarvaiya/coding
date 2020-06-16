@@ -1,0 +1,23 @@
+Given a string s, partition s such that every substring of the partition is a palindrome.
+
+Return all possible palindrome partitioning of s.
+
+Input:
+String s.
+
+Output:
+On each new line, print a different way of partitioning the string into substrings that are palindromes.
+
+Constraints:
+
+1 <= |s| <= 18
+
+Example:
+========
+
+Input:
+aabc
+
+Output:
+aa b c
+a a b c

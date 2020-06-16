@@ -1,0 +1,39 @@
+Given a sorted array of strings that is interspersed with empty strings, write a
+method to find the location of a given string
+
+Example -
+Array of strings - {"at" , "" , "" , "" , "ball" , "" , "car" , "" , "" , "dad" , "")
+Target - ball
+
+Note:
+- If the given string is not present in the array, return -1.
+- All the strings in the array are distinct.
+- The function you are given contains empty string instead of ‘$’
+
+Constraints
+- 1 <= N <= 10^5
+- |S[i]| <= 10
+- 1 <= Q <= 10000
+- All strings contains only lower case alphabets
+- Empty string are represented by '$'
+
+==========
+Example 1
+==========
+Input:
+11
+at $ $ $ ball $ car $ $ dad $
+3
+ball
+at
+here
+
+Output:
+4
+0
+-1
+
+Explanation:
+String "ball" is present at the 4th index in the array.
+String "at" is present at the 0th index in the array.
+String "here" is not present in the array.

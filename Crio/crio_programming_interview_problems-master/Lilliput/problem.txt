@@ -1,0 +1,36 @@
+You are in Lilliput the land of tiny beings. Here the person with smaller height is considered more intelligent. All the Lilliputians are standing in a straight line from 0 to n-1. You will be asked 2 types of query (u x y  and q x y) in [u x y] you have to update the height of the Lilliputian at x index to y and in [q x y] you have to tell the most intelligent lilliputians height in a range from l to r (both inclusive).
+
+Input:
+
+First line will have n representing the number of Lilliputians in Lilliput.
+Second line will have n space separated integers denoting the height of each Lilliputian standing in the line.
+Third line will have a number q denoting the number of queries.
+Next q lines will have one of the two queries.
+
+Output:
+For each query output in a new line the height of the smallest Lilliputian.
+
+Constraints:
+
+1 <= n <= 50000
+0 <= height[i] <= 1e9
+1 <= q <= 50000
+0 <= l <= r <= n-1
+
+Example:
+=======
+
+Input:
+5
+2 3 5 1 9
+4
+q 0 2
+u 1 0
+q 1 4
+q 3 3
+
+Output:
+
+2
+0
+1

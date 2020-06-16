@@ -1,0 +1,34 @@
+Topological Sort of a directed graph is a linear ordering of its vertices such that for every directed edge (U,V) from vertex U to vertex V, U comes before V in the ordering.
+
+Given a directed graph, find the Topological ordering of its vertices.
+
+Input Format :
+First line contains N,E- Number of vertices and edges.
+Next E lines 2 integers  U,V - specifying a directed edge from U to V.
+
+Output Format :
+Print the vertices in Topological order.
+
+Constraints :
+N <= 500
+1 <= E <= min(N*(N-1)/2,100000)
+1 <= U,V <= N
+
+=========
+Example 1
+=========
+Input :
+
+5 3
+1 2
+1 3
+4 5
+
+Output :
+
+1 4 2 3 5 
+
+Explanation :
+
+There are multiple solutions possible for this example. In each solution 1 should come before 2 & 3, and 4 should come before 5.
+One such other solution is : {1 2 4 3 5}

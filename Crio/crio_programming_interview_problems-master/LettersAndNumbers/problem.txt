@@ -1,0 +1,33 @@
+Longest sub-array with equal number of alphabets and numeric characters
+
+Given an array of alphanumeric characters. The task is to find the longest contiguous sub-array which has equal numbers of letters (alphabets) and numbers (numeric digits). Print the starting and ending index of this sub-array. If there are multiple results, output the one with the lowest starting index.
+
+
+Input:
+ The first line  is N.
+ The second line consists of the input string.
+
+
+Output:
+ Print the starting and ending index of this sub-array. If there does not exist any subarray print -1.
+
+Constraints:
+1 ≤ N ≤ 10^5
+'A' ≤ S[i] ≤ 'Z' or  '0' ≤ S[i] ≤ '9'.
+
+=======
+Example
+=======
+
+Input: 
+7
+ABX46Xa
+
+Output
+1 4
+
+Explaination:
+
+The required sub-array is "BX46"
+X46X is also a valid sub-array of maximum
+length but its starting index is not minimum.

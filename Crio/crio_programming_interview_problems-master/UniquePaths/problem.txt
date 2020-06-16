@@ -1,0 +1,22 @@
+A robot is located at the top-left corner(1,1) of a m x n grid(m rows , n columns).
+
+The robot can only move either down or right at any point in time. 
+The robot is trying to reach the bottom-right corner(m,n) of the grid.
+
+How many possible unique paths are there?
+
+Note: 
+m and n will be at most 1000.
+print the answer modulo 1000000007.
+
+Input Format:
+Single line containing two space seperated integers representing m and n respectively.
+
+=========
+Example 1
+=========
+Input
+3 2
+
+Output
+3

@@ -1,0 +1,46 @@
+Find if a given undirected graph has a cycle in it or not.
+
+Input Format:
+First line contains T number of test cases.
+For each test case first line will be number of nodes N and number of edges E.
+Next E lines will contains two space seperated integers U & V node which have an edge between them.
+
+Output Format:
+For each test case print "Yes" if there is cycle exist in the graph and "No" if there is not a cycle.
+
+Constraints:
+1<=N<=1000
+1<=E<=100000
+
+=========
+Example 1
+=========
+Input:
+1
+3 3
+1 2
+2 3
+3 1
+
+
+Output: 
+Yes
+
+Explanation: 
+This is a complete graph where each node is connected to every other node and number of node is greater than 2. So there is a cycle.
+
+=========
+Example 2
+=========
+Input:
+1
+3 2
+1 2
+2 3
+
+
+Output:
+No
+
+Explanation: 
+This is a simple tree which is always acyclic.

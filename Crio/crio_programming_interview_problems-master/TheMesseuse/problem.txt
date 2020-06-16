@@ -1,0 +1,27 @@
+A popular masseuse receives a sequence of back-to-back appointment requests and is debating which ones to accept. She needs a 15-minute break between appointments and therefore she cannot accept any adjacent requests. Given a sequence of back-to-back appointment requests (all multiples of 15 minutes, none overlap, and none can be moved), find the optimal (highest total booked minutes) set the masseuse can honor. Return the number of minutes.
+
+Input:
+The first line contains an integer N, The number of appointment requests. The next line contains N integers denoting the time of each appointment.
+
+Output:
+Print the Maximum possible time of total booked minutes.
+
+Constraint:
+ 
+1<=N <=100000
+1<=A[i]<=1000000
+
+========
+Example
+========
+
+Input:
+8
+30 15 60 75 45 15 15 45
+
+Output:
+180
+
+Explaination:
+These four appointments can make the maximum possible time of total booked minutes fulfilling the conditions.
+30 + 60 + 45 + 45 = 180

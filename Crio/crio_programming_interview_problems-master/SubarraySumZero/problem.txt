@@ -1,0 +1,55 @@
+Given an array of positive and negative numbers you need to find if there is any subarray with 0 sum.
+
+NOTE: A subarray of an array is a set of contiguous elements having size at least 1.
+
+Input Format:
+First line contains single integer T denoting number of testcases.
+For each test case a single integer N will be given
+And for each test case second line will contain N number of test cases.
+
+Output Format:
+Print "Yes" if a subarray exist otherwise "No" in a single line.
+
+Constraints:
+1<=T<=1000
+1<=N<=10000
+Sum of N for all test cases will be <=200000
+-10^5<=Ai<=10^5
+
+=========
+Example 1
+=========
+Input:
+2
+4
+4 2 -2 5
+2
+1 -1
+
+Output:
+Yes
+Yes
+
+
+Explanation: 
+For first test case {2,-2} will be the subset that sums to 0.
+For second test case the whole array sums to 0.
+
+
+=========
+Example 2
+=========
+Input:
+2
+3
+4 0 -2
+3
+3 2 -1
+
+Output:
+Yes
+No
+
+Explanation: 
+For first test case {0} will be the subset that sums to 0.
+For second test case there is no subarray that sums to 0.

@@ -1,0 +1,46 @@
+Problem Statement:
+
+You are given to implement a stack which performs pushing ,popping , and has a function min which returns the minimum eiement present in the stack.
+Push, pop and min should all operate in 0(1 ) time.
+
+ You will be given 3 types of queries. For each query you will be asked to perfrom suitable operations.
+ For query 1 x : push an element 'x' into the stack.
+ For query 2 : pop an element from the stack .
+ For query 3 : Find the minimum element from the stack. If the stack is empty Print -1.
+
+Constraints:
+
+1 <= n <= 10^5
+0 <= A[i] <= 10^8 , 0<= i< n
+
+Input Format:
+
+First line contain an integer n denoting the number of queries.
+For each query of type 1 there will be two integers 1 and x and for type 2 and 3 only single integer 2 or 3.
+
+Output Format:
+
+For each query of type 3. Print the minimum element in a new line.
+
+
+==========
+Example 1
+==========
+
+Input:
+6
+1 2
+1 3
+1 1
+3
+2
+3
+
+Output
+1
+2
+
+ 
+Explaination
+For the first query of input 3 stack contains 1,2,3 so the min element is 1.In 5th query 1 is popped out so min element is 2.
+

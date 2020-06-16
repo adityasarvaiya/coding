@@ -1,0 +1,26 @@
+Implement pow(x, n), which calculates x raised to the power n modulo 1000000007 (x^n%1000000007).
+
+Constraints
+0 <= n <= 10^18
+1 <= x <= 10^18
+
+Input Format
+A single line that contains two space seperated integers representing x and n. 
+
+=========
+Example 1
+=========
+Input
+2 4
+
+Output
+16
+
+=========
+Example 2
+=========
+Input
+2 100000
+
+Output
+607723520

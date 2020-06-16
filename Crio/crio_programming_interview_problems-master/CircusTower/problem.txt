@@ -1,0 +1,37 @@
+A circus is designing a tower routine consisting of people standing on top one another's shoulders. For practical and aesthetic reasons, each person must be both shorter and lighter than the person below him or her. Given the heights and weights of each person in the circus, write a method to compute the largest possible number of people in such a tower.
+
+Input:
+The first line contains an integer N, The number of people in the circus. The next N lines contains two integers denoting the height and weight of a person.
+
+Output:
+Print the largest possible number of people in such a tower.
+
+Constraint:
+ 
+1<=N <=1000
+1<=H[i]<=1000000
+1<=W[i]<=1000000
+
+========
+Example
+========
+
+Input:
+6
+65 100
+770 19
+56 90
+75 190
+60 95
+68 110
+
+Output:
+5
+
+Explaination:
+These five people can make the tallest tower fulfilling the condtitions.
+56 90
+60 95
+65 100
+68 110
+75 190

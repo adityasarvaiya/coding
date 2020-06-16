@@ -1,0 +1,30 @@
+Given a boolean expression consisting of the symbols 0 (false), 1 (true), & (AND), | (OR), and ^ (XOR), and a desired boolean result value result.
+Count the number of ways of parenthesizing the expression such that it evaluates to result.
+
+Constraint:
+1<=|s|<=100
+0<=result<=1
+
+Input Format:
+First line will contain a string s (boolean expression).
+
+Next line will contain result 0(false) or 1(true).
+
+Output Format:
+Print a single line with the number of ways of parenthesizing the expression such that it evaluates to result modulo 1e9+7.
+
+=========
+Example 1
+=========
+Input:
+
+1^1
+0
+
+Output:
+
+1
+
+Explanation:
+
+(1^1)=0.

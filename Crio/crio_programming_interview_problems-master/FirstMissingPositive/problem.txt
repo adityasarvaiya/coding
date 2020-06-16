@@ -1,0 +1,22 @@
+Given an unsorted integer array, find the smallest missing positive integer.
+
+Input format:
+First line contains 1 integer N - Number of elements in the array.
+Second line contains space separated N integers.
+
+Output format:
+Print the smallest missing positive integer.
+
+Constraints:
+N <= 200000
+-2^31 <= Range of values <= 2^31-1
+
+=========
+Example 1
+=========
+Input
+4
+3 4 -1 1
+
+Output
+2

@@ -1,0 +1,40 @@
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Determine if you are able to reach the last index.
+
+Input:
+
+In first line you ll be given the size of the array n.
+Second line will have n space separated integers.
+
+Output:
+
+If it is possible to reach the end index then print "true" else print "false";
+
+
+Constraints:
+
+1 <= n <= 1000000
+0 <= a[i] <= n-1
+
+=========
+Example 1
+=========
+Input
+4
+5 1 2 3
+
+Output
+true
+
+=========
+Example 2
+=========
+Input
+4
+1 0 5 4
+
+Output
+false

@@ -1,0 +1,77 @@
+Given a Binary Search Tree, generate all the sequences which would create the same binary search tree.
+
+
+Input Format:
+T: no of test cases given.
+N: Number of tree nodes will be given.
+In each test case tree will be given to you.
+
+
+Output Format:
+Print X,the number of valid sequences.
+In the next X lines print n space seperated integers.
+
+Constraints:
+1<= T<= 100
+1<= N<= 15
+0 <= A[i] <= 10^9
+
+=========
+Example 1
+=========
+Input:
+1
+5 
+5 3 6 1 4
+1 2 3
+2  4 5
+3 -1 -1
+4 -1 -1
+5 -1 -1
+
+
+
+Output: 
+8
+5 3 1 4 6 
+5 3 1 6 4 
+5 3 6 1 4 
+5 6 3 1 4 
+5 3 4 1 6 
+5 3 4 6 1 
+5 3 6 4 1 
+5 6 3 4 1 
+
+Explanation: 
+The tree is given below: 
+	    5
+	   / \
+	  3   6
+	 / \
+	1   4
+
+
+=========
+Example 2
+=========
+Input:
+1
+3
+2 1 3 
+1 2 3
+2 -1 -1
+3 -1 -1
+
+Output: 
+2
+2 1 3 
+2 3 1 
+
+
+Explanation: 
+The tree is given below:
+	    2
+	   / \
+	  1   3
+ 
+

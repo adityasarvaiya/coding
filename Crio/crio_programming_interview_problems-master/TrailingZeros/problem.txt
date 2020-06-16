@@ -1,0 +1,25 @@
+Problem Statement:
+Count trailing zeroes in factorial of a number.
+Given an integer n, write a function that returns count of trailing zeroes in n!.
+
+Input:
+ The first line of each test case is N.
+
+Output:
+Print the trailing zeroes in factorial of a number.
+
+Constraints:
+1 ≤ N ≤ 10^18
+
+==========
+Example 1
+==========
+Input: 
+20
+
+Output: 
+4
+
+Explaination:
+Factorial of 20 is 2432902008176640000 which has
+4 trailing zeroes.

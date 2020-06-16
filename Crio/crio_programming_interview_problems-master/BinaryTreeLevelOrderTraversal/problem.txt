@@ -1,0 +1,36 @@
+Given a binary tree, return the level order traversal of its nodes' values.(ie, from left to right, level by level).
+
+
+=========
+Example 1
+=========
+Input
+4
+4 3 2 1
+
+Treeview
+     4
+  3      2
+1   x  x   x
+
+Output
+4
+3 2
+1
+
+=========
+Example 2
+=========
+Input
+7
+-5 5 2 null 4 null 5
+
+Treeview
+     -5
+  5       2
+x   4   x   5
+
+Output
+-5
+5 2
+4 5

@@ -1,0 +1,35 @@
+Given a sorted integer array nums of length N, where the range of elements are in the inclusive range [lower, upper], return its missing ranges.
+
+Input Format -
+First line contains an integer representing the value of N.
+Next line contains two space seperated integers representing the value of lower and upper respectively.
+Next line contains N space seperated integers representing the array nums.
+
+Constraints-
+0 <= N <= 100000
+-2147483648 <= lower,upper <= 2147483647
+lower <= nums[i] <= upper
+
+Output Format -
+Print M lines where each line is a string representing the missing range and M is number of missing ranges.
+Note: you don't have to print M.
+
+=========
+Example 1
+=========
+Input -
+5
+0 99
+0 1 3 50 75
+
+
+Output -
+2
+4->49
+51->74
+76->99
+
+
+
+Explanation-
+2 is missing and ranges from 4 to 49 , 51 to 74 and 76 to 99 are missing.

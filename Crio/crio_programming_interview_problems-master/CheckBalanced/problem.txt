@@ -1,0 +1,50 @@
+Implement a function to check if a binary tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that the heights of the two subtrees of any node never differ by more than one.
+
+
+Input Format:
+T: no of test cases given.
+N: Number of tree nodes will be given.
+In each test case tree will be given to you.
+
+
+Output Format:
+Print "Yes" if the tree is balanced else print "No".
+
+Constraints:
+1<=T<=100
+1<=N<=100000
+It's guaranteed that sum of Number of tree nodes for all test cases will be less than 500000.
+
+=========
+Example 1
+=========
+Input:
+1
+3
+1 2 3
+1 2 3
+2 -1 -1
+3 -1 -1
+
+Output: 
+Yes
+
+Explanation: 
+For each node the difference of depth of left subtree and right subtree is less than equal to 1 so the tree is balanced.
+
+=========
+Example 2
+=========
+Input:
+1
+3
+1 2 3
+1 2 -1
+2 3 -1
+3 -1 -1
+
+Output:
+No
+
+Explanation: 
+Node(1) has depth of the left subtree is 2 and depth of right subtree is 0 hence the tree is unbalanced.

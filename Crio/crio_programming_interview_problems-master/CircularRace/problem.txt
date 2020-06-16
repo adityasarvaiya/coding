@@ -1,0 +1,53 @@
+N stations are situated along a circular track, and at ith station one can take maximum gas[i] amount of gas.
+You have a racecar which has unlimited gas tank. To travel from station i to station (i+1) in circular fashion burn[i] amount of gas is burnt. You can begin the journey with an empty tank at one of the ith gas station.
+You need to print the starting gas station's index if you can travel clockwise in the racetrack and finish to the same station where you started, otherwise return -1.
+
+Note:
+If there are multiple solution then print the station with minimum index.
+
+
+Input Format:
+First line will contain single integer N.
+Next line will contain N space seperated values representing gas array.
+Next line will contain N space seperated values representing burn array.
+
+Output Format:
+Print a single integer.Consider 1-based indexing.
+
+Constraints:
+1<=N<=200000
+1<=burn[i],gas[i]<=1000000
+
+=========
+Example 1
+=========
+Input:
+5
+5 1 2 3 4
+4 2 3 1 5
+
+
+Output: 
+4
+
+Explanation:
+Starting from index 4 one will have 3 amount of gas in tank and when he travels to index 5 he will have 3-1 = 2 amount of gas left.
+At index 5 he will refuel and travel to index 1 to have 2+4-5 = 1 gas left. 
+At index 1 similarly he will have 1+5-4= 2 amount of gas left.
+At index 2 similarly he will have 2+1-2=1 amount of gas left.
+And at index 3 isimilarly he will have 1+2-3=0.Journey is completed and he is now at index 4.
+
+
+=========
+Example 2
+=========
+Input:
+3
+3 4 3
+4 3 4
+
+Output:
+-1
+
+Explanation: 
+He cannot chose any position such that he can complete the journey.

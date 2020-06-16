@@ -1,0 +1,15 @@
+TODO.txt
+.swp
+.lock
+.class
+.ods
+.bin
+.gz
+.log
+.tmp
+.out
+actual-
+edge-
+perf-
+.pyc
+.zip

@@ -1,0 +1,38 @@
+N ropes of different length are given in an array. You need to join N ropes of different lengths into one single rope. The cost of connecting two ropes will be equal to the sum of their lengths. You need to connect the ropes with the minimum cost.
+
+Input Format:
+First line will contain only N denoting number of ropes.
+Second line contain N space seperated integers. 
+
+Output Format:
+You need to print the minimum cost in a single line.
+
+Constraints:
+1<=N<=200000
+1<=Ai<=10000000
+
+=========
+Example 1
+=========
+Input:
+3
+1 2 3
+
+Output: 
+9
+
+Explanation: 
+First we will connect ropes of length 1 & 2 which cost will be 3. Now we will have ropes of length 3 & 3.Then we connect 3 & 3 together to get a single rope of length 6.THe total cost will be 3 + 6 = 9  which is minimum possible.
+
+
+=========
+Example 2
+=========
+Input:
+4
+3 3 6 10
+
+Output:
+40
+
+Explanation: 

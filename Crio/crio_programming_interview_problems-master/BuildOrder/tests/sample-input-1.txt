@@ -1,0 +1,5 @@
+5 3
+A xy p c b
+p xy
+b A
+xy c

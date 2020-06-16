@@ -1,0 +1,25 @@
+Given two strings, s1 and s2, write code to check if s2 is a rotation of s1 or not.
+
+Input Format -
+First line contains two space seperated strings representing the value of s1 and s2 respectively.
+
+Constraints-
+
+1 <= length(s1),length(s2) <= 1000
+
+
+Output Format -
+Print "Yes"(without quotes) if s2 is rotation of s1 print "No"(without quotes) otherwise.
+
+=========
+Example 1
+=========
+Input -
+waterbottle rbottlewate
+
+
+Output -
+Yes
+
+Explanation-
+We can rotate "waterbottle" 4 times to get "rbottlewate".

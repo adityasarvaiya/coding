@@ -1,0 +1,45 @@
+An arithmetic expression in Reverse Polish Notation will be given. Your task is to evaluate the expression. Valid operators are +, -, *, /. Each operand can be an integer or another expression.
+
+NOTE: 
+    Perform Integer division always.
+    Answer will fit into 64 bit integer.
+
+It is always guaranteed that answer exists.
+
+Input Format:
+In first line an integer N will be given.
+In Next line N space seperated strings will be given.
+
+Output Format:
+Print a integer in a single line
+
+Constraints:
+N: 2*10^5
+Length of each string is at max 4.
+
+=========
+Example 1
+=========
+Input:
+3
+4 5 +
+
+Output: 
+9
+
+Explanation: 
+The expression will be treated as (4 + 5 ) which results to 9.
+
+
+=========
+Example 2
+=========
+Input:
+7
+4 5 + 7 9 - +
+
+Output:
+7
+
+Explanation: 
+The expression will be treated as ( (4 + 5) + (7 - 9) ) which results to 7.

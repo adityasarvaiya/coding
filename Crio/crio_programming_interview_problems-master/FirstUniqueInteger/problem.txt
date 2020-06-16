@@ -1,0 +1,39 @@
+Given a non-empty list of elements, return the sequentially first element which occured only once in the array.
+
+Input:
+The first line contains N, N is the number of input elements. The second line contains N space seperated input integers.
+
+Output:
+Print the first Non-Repeating Element in the array. If there is no element with a frequency 1 print -1.
+
+Constraints:
+1 <= N <= 100000
+0 <= A[i] <= 10^9
+
+==========
+Example 1
+==========
+
+Input:
+4 
+9 6 7 6 
+
+Output:
+9
+
+Explanation:
+In the given input, 9 and 7 has a frequency 1 but since 9 came first so output is 9.
+ 
+==========
+Example 2
+==========
+
+Input:
+5 
+7 6 1 6 1 
+
+Output:
+7
+
+Explanation:
+In the given input, only 7 has a frequency 1 .

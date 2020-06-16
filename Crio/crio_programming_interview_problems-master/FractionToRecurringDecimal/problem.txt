@@ -1,0 +1,40 @@
+Given two integers representing the numerator and denominator of a fraction,
+return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+
+
+Input format:
+First line contains 2 integers N, D - The Numerator & Denominator respectively.
+
+Output format:
+Print the answer in required format.
+
+Constraints:
+2^31 <= N,D <= 2^31-1
+
+=========
+Example 1
+=========
+Input
+1 2
+
+Output
+0.5
+
+=========
+Example 2
+=========
+Input
+2 3
+
+Output
+0.(6)
+
+=========
+Example 3
+=========
+Input
+2 1
+
+Output
+2

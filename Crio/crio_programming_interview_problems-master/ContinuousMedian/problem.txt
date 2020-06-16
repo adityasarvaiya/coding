@@ -1,0 +1,38 @@
+You are given an array of numbers. At the input of every element of the array you have to find the median up to that point of the array and print the median at every i in a separate line.
+Median: The "middle" of a sorted (increasing) list of numbers. To find the Median, place the numbers in value order and find the middle number.
+If the number of elements is odd then the median is the middle element of the list.
+If the number of elements is even then the median is (element at index floor(n/2) + element at index (floor(n/2)+1) )/2; 
+Eg:
+1) 1 2 3 4 5 median of this list is 3.
+2) 1 2 4 5 median of this list is also 3. ((2+4)/2=3)
+
+Constraint:
+
+1<= n <=200000
+0<= a[i] <=1e9
+
+Input Format:
+
+First line will contain an integer n denoting the size of the array.
+Next line will contain n spae separated integers.
+
+Output Format:
+
+Print median upto every 1<= i <=n in a new line.
+
+=========
+Example 1
+=========
+Input:
+
+5
+1 2 1 2 3
+
+Output:
+
+1
+1
+1
+1
+2
+

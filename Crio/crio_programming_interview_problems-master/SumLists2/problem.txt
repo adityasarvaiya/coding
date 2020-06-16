@@ -1,0 +1,38 @@
+You have two numbers represented by a linked list, where each node contains a single
+digit. The digits are stored in forward order, such that the ones digit is at the tail of the list. Write a
+function that adds the two numbers and returns the sum as a linked list.
+
+Constraints
+1 <= N <= 10^5
+|A[i]| <= 10^9
+
+==========
+Example 1
+==========
+Input:
+3
+6 1 7
+3
+2 9 5
+
+Output:
+9 1 2
+
+Explanation:
+That is,
+617 + 295 = 912
+
+==========
+Example 2
+==========
+Input:
+2
+4 9
+1
+5
+
+Output:
+5 4
+
+That is,
+49 + 5 = 54

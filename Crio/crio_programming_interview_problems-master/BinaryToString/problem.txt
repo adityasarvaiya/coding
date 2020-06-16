@@ -1,0 +1,22 @@
+Given a real number between 0 and 1 (e.g., 0.72) that is passed in as a double, print the binary representation. If the number cannot be represented accurately in binary with at most 32 characters, print "ERROR."
+
+Constraint:
+0< Real number <1
+
+Input Format:
+First and only line will contain a real number.
+
+Output Format:
+Print the binary representation of the given number.If binary representation exceeds 32 characters after decimal print "ERROR".
+
+=========
+Example 1
+=========
+Input:
+
+0.375
+
+Output:
+
+0.011
+

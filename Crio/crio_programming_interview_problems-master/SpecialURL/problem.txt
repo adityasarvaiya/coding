@@ -1,0 +1,25 @@
+Given a string S consisting of lowercase alphabets and spaces.Write a function to replace all spaces in a string with '%20'.
+
+Input Format -
+A single line that contains a string representing the string S.
+
+Constraints-
+
+1 <= length(S) <= 100000
+
+
+Output Format -
+Print a string where spaces are replaced with "%20".
+
+=========
+Example 1
+=========
+Input -
+hello world
+
+
+Output -
+hello%20world
+
+Explanation-
+Space between hello and world is replaced by %20.
