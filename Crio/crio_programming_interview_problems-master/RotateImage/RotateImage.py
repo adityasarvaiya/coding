@@ -1,10 +1,20 @@
 from crio.io import PrintMatrix
 
-def rotate(matrix):
-    # TODO: CRIO_TASK_MODULE_L2_PROBLEMS
-    # Your implementation goes here
+class Solution:
+    def __init__(self, matrix):
+        self.matrix = matrix
 
-    return []
+    def rotateImage(self):
+    # CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
+        n = len(self.matrix[0])        
+        for i in range(n // 2 + n % 2):
+            for j in range(n // 2):
+                tmp = self.matrix[n - 1 - j][i]
+                self.matrix[n - 1 - j][i] = self.matrix[n - 1 - i][n - j - 1]
+                self.matrix[n - 1 - i][n - j - 1] = self.matrix[j][n - 1 -i]
+                self.matrix[j][n - 1 - i] = self.matrix[i][j]
+                self.matrix[i][j] = tmp
+    # CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
 if __name__ == '__main__':
     n = int(input())
@@ -13,6 +23,7 @@ if __name__ == '__main__':
         nums = input().split()
         nums = [int(i) for i in nums]
         matrix.append(nums)
-    rotate(matrix)
-    PrintMatrix.SquareMatrix(matrix)
+    sol = Solution(matrix)
+    sol.rotateImage()
+    PrintMatrix.SquareMatrix(sol.matrix)
 

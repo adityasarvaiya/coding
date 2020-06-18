@@ -3,11 +3,10 @@
 using namespace std;
 
 class LongestSubstringWithoutRepeatingCharacter {
-  public:
+public:
     int lengthOfLongestSubstring(string s) {
         int longestSubstring = 0;
-        // Your implementation goes here
-        
+
         // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         int n = s.size();
 

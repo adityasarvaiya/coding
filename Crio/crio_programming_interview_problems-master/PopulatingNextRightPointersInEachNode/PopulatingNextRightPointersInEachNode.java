@@ -15,6 +15,7 @@ class Pair {
 }
 
 public class PopulatingNextRightPointersInEachNode {
+    // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
     TreeNode makeTreeFromEdges(long parent[] , ArrayList<Pair> edges) {
         HashMap<Integer , TreeNode> nodebyIndex = new HashMap<Integer , TreeNode>();
         int n = parent.length;
@@ -40,6 +41,7 @@ public class PopulatingNextRightPointersInEachNode {
 
         return root;
     }
+    // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int tests = scanner.nextInt();

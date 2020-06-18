@@ -2,7 +2,7 @@
 using namespace std;
 class ClimbingStairs {
 public:
-    int climbStairs(int numberOfStairs) {
+    int climbingStairs(int numberOfStairs) {
         // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         if (numberOfStairs == 0) return 1;
         int dp[numberOfStairs + 1];
@@ -18,7 +18,7 @@ public:
 int main() {
     int numberOfStairs;
     cin >> numberOfStairs;
-    int result = ClimbingStairs().climbStairs(numberOfStairs);
+    int result = ClimbingStairs().climbingStairs(numberOfStairs);
     cout << result;
     return 0;
 }

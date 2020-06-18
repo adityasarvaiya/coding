@@ -1,8 +1,10 @@
 def singleNumber(nums):
-    # TODO: CRIO_TASK_MODULE_L1_PROBLEMS
-    # Your implementation goes here
-
-    return True
+    # CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
+    ans = 0
+    for number in nums:
+        ans = ans^number
+    return ans
+    # CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
 if __name__ == '__main__':
     n = int(input())

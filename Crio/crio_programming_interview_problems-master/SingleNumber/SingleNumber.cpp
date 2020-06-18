@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#include "FastIO.hpp"
-#include "ReadMatrix.hpp"
+#include "../crio/cpp/io/FastIO.hpp"
+#include "../crio/cpp/io/ReadMatrix.hpp"
 
 using namespace std;
 
@@ -9,8 +9,8 @@ public:
     int singleNumber(vector<int>& nums) {
     	// CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         int n = nums.size();
-        int x = nums[0];
-        for(int i = 1; i < n; i++)
+        int x = 0;
+        for(int i = 0; i < n; i++)
         	x ^= nums[i];
         return x;
         // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS

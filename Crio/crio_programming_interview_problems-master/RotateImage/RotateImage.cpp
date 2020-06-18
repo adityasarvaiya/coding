@@ -1,15 +1,12 @@
-#include "FastIO.hpp"
-#include "PrintMatrix.hpp"
-#include "ReadMatrix.hpp"
+#include "../crio/cpp/io/PrintMatrix.hpp"
+#include "../crio/cpp/io/ReadMatrix.hpp"
 #include <bits/stdc++.h>
 using namespace std;
 
 class RotateImage {
   public:
-    void rotate(vector<vector<int>>& arr) {
-        // TODO: CRIO_TASK_MODULE_L2_PROBLEMS
-        // Your implementation goes here
-        // CRIO_SOLUTION_START_MODULE_L2_PROBLEMS
+    void rotateImage(vector<vector<int>>& arr) {
+        // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         int m = arr.size();
         if (m == 0 || m == 1)
             return;
@@ -24,17 +21,16 @@ class RotateImage {
             }
             ind++;
         }
-        // CRIO_SOLUTION_END_MODULE_L2_PROBLEMS
+        // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
     }
 };
 
 int main() {
-    FastIO();
     int n;
     cin >> n;
     vector<vector<int>> matrix;
     ReadMatrix<int>().SquareMatrix(n, matrix);
-    RotateImage().rotate(matrix);
+    RotateImage().rotateImage(matrix);
     PrintMatrix<int>().SquareMatrix(matrix);
     return 0;
 }

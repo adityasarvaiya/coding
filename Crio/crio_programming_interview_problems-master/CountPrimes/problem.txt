@@ -1,5 +1,14 @@
 Count the number of prime numbers less than a non-negative number, n.
 
+INPUT
+Single line containing one integer N
+
+CONSTRAINTS
+1<=N=100000
+
+OUTPUT
+Single line containing one number denoting the number of prime numbers less than N
+
 =======
 Example
 =======

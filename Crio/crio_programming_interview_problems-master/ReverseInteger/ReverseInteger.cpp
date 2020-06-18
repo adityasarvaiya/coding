@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "FastIO.hpp"
+#include "../crio/cpp/io/FastIO.hpp"
 
 using namespace std;
 

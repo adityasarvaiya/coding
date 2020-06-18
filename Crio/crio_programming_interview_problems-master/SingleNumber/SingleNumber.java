@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class SingleNumber {
-    // Implement your solution by completing the below function
     public int singleNumber(int[] nums) {
         // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         int num = 0;

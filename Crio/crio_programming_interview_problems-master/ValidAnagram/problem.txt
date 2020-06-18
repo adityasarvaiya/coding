@@ -1,5 +1,8 @@
 Given two strings s and t , write a function to determine if t is an anagram of s.
 
+Constraints:
+Length of string <= 100000
+
 =========
 Example 1
 =========

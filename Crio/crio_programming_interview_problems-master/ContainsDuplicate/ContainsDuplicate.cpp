@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
-#include "FastIO.hpp"
-#include "ReadMatrix.hpp"
+#include "../crio/cpp/io/FastIO.hpp"
+#include "../crio/cpp/io/ReadMatrix.hpp"
 using namespace std;
 
 class ContainsDuplicate {

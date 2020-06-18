@@ -1,5 +1,14 @@
 Given a 32-bit signed integer, reverse digits of an integer.
 
+INPUT
+Single line containing a 32 bit signed integer N
+
+CONSTRAINTS
+-2^31<=N<=2^31-1
+
+OUTPUT
+Single line containing a 32 bit signed integer denoting the reverse of N
+
 =========
 Example 1
 =========

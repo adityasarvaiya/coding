@@ -5,6 +5,7 @@ from queue import Queue
 # CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
 # CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
+# CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
 def getTreeFromInput(n, val, edges):
     nodes = []
     for i in range(n):
@@ -36,6 +37,7 @@ def getNextPointersString(root):
         if curr.right:
             queue.put(curr.right)
     return nextPointers
+# CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
 if __name__ == '__main__':
     testCases = int(input())

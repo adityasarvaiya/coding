@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ClimbingStairs {
 
-    public int climbStairs(int n) {
+    public int climbingStairs(int n) {
         // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         if (n == 1) {
             return 1;
@@ -24,7 +24,7 @@ public class ClimbingStairs {
         Scanner scanner = new Scanner(System.in);
         int numberOfStairs = scanner.nextInt();
         scanner.close();
-        int result = new ClimbingStairs().climbStairs(numberOfStairs);
+        int result = new ClimbingStairs().climbingStairs(numberOfStairs);
         System.out.print(result);
     }
 }

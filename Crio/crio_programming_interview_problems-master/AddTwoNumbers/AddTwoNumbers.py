@@ -1,11 +1,28 @@
-from crio.io import PrintMatrix
-from crio.ds.List import ListNode
+from Solution import *
+# CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
+# CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
-def addTwoNumbers(l1, l2):
-    # TODO: CRIO_TASK_MODULE_L2_PROBLEMS
-    # Your implementation goes here
+def createList(numbers):
+	if(len(numbers) == 0):
+		return None
 
-    return []
+	head = ListNode(numbers[0])
+	node = head
+	for i in range(1, len(numbers)):
+		node.next = ListNode(numbers[i])
+		node = node.next
+
+	return head
+
+def extractList(head):
+	arr = []
+
+	while(head):
+		arr.append(head.val)
+		head = head.next
+
+	return arr
+
 
 if __name__ == '__main__':
     n = int(input())
@@ -14,8 +31,9 @@ if __name__ == '__main__':
     m = int(input())
     nums2 = input().split()
     nums2 = [int(i) for i in nums2]
-    l1 = ListNode.createList(nums1)
-    l2 = ListNode.createList(nums2)
+    l1 = createList(nums1)
+    l2 = createList(nums2)
     resultList = addTwoNumbers(l1, l2)
-    result = ListNode.extractList(resultList)
-    PrintMatrix.OneDMatrix(result, " ")
+    result = extractList(resultList)
+    for i in result:
+        print(i,end=' ')

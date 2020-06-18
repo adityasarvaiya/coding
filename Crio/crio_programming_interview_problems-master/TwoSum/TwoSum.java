@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class TwoSum {
-    // Implement your solution by completing the below function
+
     public int[] twoSum(int[] nums, int target) {
         // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         Map<Integer, Integer> complements = new HashMap<>();
@@ -15,10 +15,6 @@ public class TwoSum {
         }
         return new int[] { -1, -1 };
         // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
-
-        // CRIO_UNCOMMENT_START_MODULE_L1_PROBLEMS
-        //return new int[0];
-        // CRIO_UNCOMMENT_END_MODULE_L1_PROBLEMS
     }
 
     public static void main(String[] args) {

@@ -1,30 +1,30 @@
 #include <bits/stdc++.h>
-#include "FastIO.hpp"
-#include "ReadMatrix.hpp"
-#include "PrintMatrix.hpp"
+#include "../crio/cpp/io/FastIO.hpp"
+#include "../crio/cpp/io/ReadMatrix.hpp"
+#include "../crio/cpp/io/PrintMatrix.hpp"
 
 using namespace std;
 
 class TwoSum {
-    public:
-        vector<int> twoSum(vector<int>& nums, int target) {
-            vector<int> v(2,0);
-            // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
-            map<int,int> mp;
-            int n = nums.size();
-            for(int i = 0; i < n; i++) {
-                int x = target - nums[i];
-                auto itr = mp.find(x);
-                if(itr != mp.end()) {
-                    v[0] = itr->second;
-                    v[1] = i;
-                    return v;
-                }
-                mp[nums[i]] = i;
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> v(2, 0);
+        // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
+        map<int, int> mp;
+        int n = nums.size();
+        for (int i = 0; i < n; i++) {
+            int x = target - nums[i];
+            auto itr = mp.find(x);
+            if (itr != mp.end()) {
+                v[0] = itr->second;
+                v[1] = i;
+                return v;
             }
-            // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
-            return v;
+            mp[nums[i]] = i;
         }
+        // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
+        return v;
+    }
 };
 
 int main() {

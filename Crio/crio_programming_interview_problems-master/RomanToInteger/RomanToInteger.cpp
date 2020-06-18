@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include "FastIO.hpp"
 
 using namespace std;
 
@@ -46,7 +45,6 @@ public:
 };
 
 int main() {
-	FastIO();
 	string s;
 	cin >> s;
 	int result = RomanToInteger().romanToInt(s);

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 class MinimumWindowSubstring {
-    // CRIO_SOLUTION_START_MODULE_L3_PROBLEMS
+    // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
     public static boolean isValid(HashMap<Character,Integer> a,HashMap<Character,Integer> b) {
         for (Map.Entry<Character, Integer> entry : b.entrySet()) {
             if(!a.containsKey(entry.getKey())) {
@@ -14,10 +14,10 @@ class MinimumWindowSubstring {
         }
         return true;
     }
-    // CRIO_SOLUTION_END_MODULE_L3_PROBLEMS
+    // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
 
-    public String minWindow(String s, String t) {
-        // CRIO_SOLUTION_START_MODULE_L3_PROBLEMS
+    public String minimumWindowSubString(String s, String t) {
+        // CRIO_SOLUTION_START_MODULE_L1_PROBLEMS
         HashMap<Character,Integer> countT = new HashMap<Character,Integer>();
         HashMap<Character,Integer> countS = new HashMap<Character,Integer>();
         
@@ -58,11 +58,7 @@ class MinimumWindowSubstring {
             }
         }
         return res;
-        // CRIO_SOLUTION_END_MODULE_L3_PROBLEMS
-
-        // CRIO_UNCOMMENT_START_MODULE_L3_PROBLEMS
-        // return "";
-        // CRIO_UNCOMMENT_END_MODULE_L3_PROBLEMS
+        // CRIO_SOLUTION_END_MODULE_L1_PROBLEMS
     }
 
     public static void main(String[] args) {
@@ -70,7 +66,7 @@ class MinimumWindowSubstring {
         String s = in.next();
         String t = in.next();
         in.close();
-        String result = new MinimumWindowSubstring().minWindow(s , t);
+        String result = new MinimumWindowSubstring().minimumWindowSubstring(s , t);
         System.out.println(result);
     }
 }
