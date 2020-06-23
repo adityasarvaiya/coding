@@ -1,27 +1,39 @@
-// IT will return hash of pattern p
-unordered_map <char, int> buildHashOfPattern(string p);
 
-hash = buildHashOfPattern(p);
-
-1 iterate over string s
-    if char is present in hash
-        reduce its count
-        if count == 0
-            match++ 
+def find_unsorted_subarray(nums):
+    if len(nums) <2:
+        return 0
     
-    if i > pattern size
-        char c = s[i - p.size()]
-        if c prsent in hash 
-            hash[c] += 1
-
-            if hash[c] == 1
-                match--
+    l=0
+    r=len(nums)-1
     
-    if match is equal to size of hash
-        // that means current window contains all the char in pattern p
-        add (i - p.size() + 1) to the ans
+    while l<len(nums)-1 and nums[l] <= nums[l+1]:
+        l+=1
+        
+    while r>0 and nums[r] >= nums[r-1]:
+        r-=1
     
+    if l>r:
+        return 0
 
-return ans
+    min_el = min(nums[l:r+1])#min(nums[l], nums[r])
+    max_el = max(nums[l:r+1])#max(nums[l], nums[r])
+
+    # l -= 1
+    while l>0 and nums[l-1]>min_el:
+        l -= 1
+
+    # r += 1
+    while r < len(nums)-1 and nums[r+1]<max_el:
+        r += 1
+
+    return r-l+1
+
+def main():
+    n = int(input())
+    nums = list(map(int, input().split()))
+    answer = find_unsorted_subarray(nums)
+    print(answer)
 
 
+if __name__ == "__main__":
+    main()

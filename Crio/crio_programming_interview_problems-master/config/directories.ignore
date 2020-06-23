@@ -1,8 +1,0 @@
-.git/
-config/
-build/
-.idea/
-.gradle/
-static/
-out/
-CodeMinification/

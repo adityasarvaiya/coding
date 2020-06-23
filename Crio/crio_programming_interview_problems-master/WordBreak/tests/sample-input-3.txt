@@ -1,7 +1,0 @@
-catsandog
-5
-cats
-dog
-sand
-and
-dog
