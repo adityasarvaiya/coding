@@ -1,39 +1,32 @@
+from crio.ds.List.ListNode import *
 
-def find_unsorted_subarray(nums):
-    if len(nums) <2:
-        return 0
-    
-    l=0
-    r=len(nums)-1
-    
-    while l<len(nums)-1 and nums[l] <= nums[l+1]:
-        l+=1
-        
-    while r>0 and nums[r] >= nums[r-1]:
-        r-=1
-    
-    if l>r:
-        return 0
+def middle(head):
+    slow=fast=head
+    while fast.next!=None and fast.next.next!=None:
+        slow=slow.next
+        fast=fast.next.next
+    return slow
 
-    min_el = min(nums[l:r+1])#min(nums[l], nums[r])
-    max_el = max(nums[l:r+1])#max(nums[l], nums[r])
+def reverse_list(head):
+    previous=None
+    current=head
+    while current:
+        temp=current.next
+        current.next=previous
+        previous=current
+        current=temp
+    return previous
 
-    # l -= 1
-    while l>0 and nums[l-1]>min_el:
-        l -= 1
-
-    # r += 1
-    while r < len(nums)-1 and nums[r+1]<max_el:
-        r += 1
-
-    return r-l+1
-
-def main():
-    n = int(input())
-    nums = list(map(int, input().split()))
-    answer = find_unsorted_subarray(nums)
-    print(answer)
-
-
-if __name__ == "__main__":
-    main()
+def is_palindrome_list(head):
+    middle_node=middle(head)
+    second=rev=reverse_list(middle_node.next)
+    first=head
+    palindrome=True
+    while second:
+        if first.val!=second.val:
+            palindrome=False
+            break
+        first=first.next
+        second=second.next
+    middle_node.next=reverse_list(rev)
+    return palindrome
