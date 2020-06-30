@@ -1,0 +1,31 @@
+Given T which is the number of test cases and for each test case you are given a string S which consists of both lowercase and uppercase alphabetical letters,you have to write a function to check if string S is a permutation of a palindrome or not.
+
+Input Format -
+First line contains an integer representing the value of T.
+In next T lines each line contains the string S.
+
+Constraints-
+
+1 <= T <= 10
+1 <= length(S) <= 100000
+
+
+Output Format -
+For each test case print "True"(without quotes) if it is a permutation of a palindrome and "False" otherwise.
+
+=========
+Example 1
+=========
+Input -
+2
+nnaamm
+hello
+
+
+Output -
+True
+False
+
+Explanation-
+nnaamm is permutation of namman.
+hello is not a permutation of any palindrome.

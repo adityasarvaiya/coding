@@ -1,0 +1,20 @@
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+Input:
+An integer n.
+
+Output:
+All the possible well-formed parentheses combinations , each in a new line.
+
+Constraints:
+0<=n<=15
+
+Example:
+========
+
+Input:
+2
+
+Output:
+()()
+(())

@@ -1,0 +1,29 @@
+Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height.
+You need to output the height of the tree in a single line.
+
+NOTE: In all other cases where tree is not a valid BST output would be -1.
+
+Input Format:
+First line n contains number of integers.
+Next line contains n sorted integers.
+
+Output Format:
+You need to output the height of the tree in a single line.
+
+Constraints:
+n: number of integers(1<=n<=200000)
+ai: array elements(1<=ai<=10^9)
+
+=========
+Example 1
+=========
+Input:
+7
+1 2 3 4 5 6 7
+
+
+Output: 
+3
+
+Explanation:
+So we have a tree with root 4 with minimum possible height 3.

@@ -1,0 +1,70 @@
+
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+
+Input Format:
+T: no of test cases given.
+N: Number of tree nodes will be given.
+In each test case tree will be given to you.
+
+
+Output Format:
+Print "Yes" if the tree is a valid BST else print "No".
+
+Constraints:
+1<=T<=1000
+1<=N<=10000
+It's guaranteed that sum of Number of tree nodes for all test cases will be less than 500000.
+
+=========
+Example 1
+=========
+Input:
+1
+3
+2 1 3
+1 2 3
+2 -1 -1
+3 -1 -1
+
+
+Output: 
+Yes
+
+Explanation: 
+    2
+   / \
+  1   3
+The root's value is 2 which is greater than 1 and less than 3. Therefore it is a validBST
+
+=========
+Example 2
+=========
+Input:
+1
+5 
+5 1 4 3 6
+1 2 3  
+2 -1 -1
+3 4 5
+4 -1 -1
+5 -1 -1
+
+Output: 
+No
+
+Explanation: 
+	    5
+	   / \
+	  1   4
+	     / \
+	    3	6
+The root's value is 5 which is greater than 4  which violates the condition of a valid BST. Therefore it is not a validBST
+
+

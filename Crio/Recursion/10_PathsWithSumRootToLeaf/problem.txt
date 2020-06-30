@@ -1,0 +1,35 @@
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+
+Note: A leaf is a node with no children.
+
+Input:
+You are given the root node and the sum.
+
+Output:
+Number of paths from root to leaf whose path-sum is equal to given sum.
+
+Constraints:
+1<= value of nodes <=10000
+1<= number of nodes <=100000
+
+Example:
+========
+Tree given with root as 5.
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \    / \
+7    2  5   1
+
+sum given=22
+
+Output:
+2
+
+Explanation:
+
+There are two paths from root to leaf whose sum is equal to 22:
+[5,4,11,2]
+[5,8,4,5]
